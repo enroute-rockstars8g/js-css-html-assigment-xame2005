@@ -7,16 +7,19 @@ function fibonacci(n) {
 }
 
 //fibonacci sequence not recursive
-function fibonacci2(n) {
+function fibonacci2() {
+  const fibonacciInput = document.getElementById("fibonacci-input").value;
+
   let a = 0;
   let b = 1;
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < fibonacciInput; i++) {
     let c = a + b;
     a = b;
     b = c;
     console.log(c);
+    var aBlock = document
+      .createElement("p")
+      .appendChild(document.createElement("c"));
   }
   return b;
 }
-
-fibonacci2(10);

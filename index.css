@@ -92,7 +92,22 @@ label{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 1.5em;
     padding: 1em;
+    
 }
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+.card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+  }
 
 /*Fibonacci*/
 .fibonacci{
@@ -102,10 +117,11 @@ label{
     margin-top: 2em;
     height: 150px;
     background-color: #fdee23;
+    margin-bottom: 2em;
 }
 
 .fibonacci-input{
-    width: 70%;
+    width: 40%;
     height: 50px;
     border: 2px solid #128efe;
     border-radius: 10px;
@@ -138,3 +154,15 @@ label{
     color: white;
 
 }
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 768px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
